@@ -1,0 +1,21 @@
+[workspace]
+members = [".", "uniffi-bindgen"]
+
+[package]
+name = "camillia_core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Shared Rust core for the Camillia macOS and Windows apps"
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
+name = "camillia_core"
+
+[dependencies]
+uniffi = "=0.31.0"
+thiserror = "2"
+
+[profile.release]
+lto = true
+strip = true
