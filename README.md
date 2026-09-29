@@ -14,6 +14,7 @@ Both frontends include this repo as a git submodule at `core/`.
 
 - `src/lib.rs`: the exported API (`#[uniffi::export]`)
 - `uniffi-bindgen/`: pinned bindgen CLI used for Swift generation
+- `uniffi.toml`: binding options (C# namespace `Camillia.Core`)
 - `scripts/build-apple.sh`: static lib + Swift bindings
 - `scripts/build-windows.ps1`: DLL + C# bindings
 
